@@ -26,7 +26,6 @@ body {
   position: relative; }
   .small__title::before {
     content: "";
-    background-image: url("../images/points.svg");
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -364,8 +363,6 @@ body {
               transform: rotate(-25deg); }
   .features .small__title {
     color: #fff; }
-    .features .small__title::before {
-      background-image: url("../images/features/points.svg"); }
   .features__content {
     width: 410px; }
   .features__title {
@@ -478,7 +475,6 @@ body {
       content: "";
       height: 2px;
       width: 64px;
-      background-repeat: 5px;
       background-color: #56ccf2;
       position: absolute;
       bottom: 0;
