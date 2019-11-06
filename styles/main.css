@@ -151,8 +151,8 @@ body {
     .slider__photo .arrow {
       cursor: pointer; }
     .slider__photo .slide {
-      height: 500px;
-      width: 1000px; }
+      height: 640px;
+      width: 1146px; }
     .slider__photo .photo__text {
       position: absolute;
       bottom: 40px;
@@ -490,13 +490,13 @@ body {
     font-weight: 800;
     font-size: 12.6px;
     line-height: 150%; }
-  .reviews .review__card:nth-child(1) .review__photo::before {
+  .reviews .review__card:first-child .review__photo::before {
     top: -10px;
     height: 150%; }
-  .reviews .review__card:nth-child(1)::after,
-  .reviews .review__card:nth-child(1) .review__text::after {
+  .reviews .review__card:first-child::after,
+  .reviews .review__card:first-child .review__text::after {
     background-color: #79d7f5; }
-  .reviews .review__card:nth-child(1) .review__position {
+  .reviews .review__card:first-child .review__position {
     color: #79d7f5; }
   .reviews .review__card:nth-child(2) .review__photo::before {
     left: -15px;
