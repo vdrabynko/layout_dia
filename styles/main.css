@@ -163,7 +163,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .header {
-    height: 600px; }
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .header__top {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -172,17 +175,11 @@ body {
       .header__top .top__title {
         margin: 20px 0; }
       .header__top .header__nav {
-        opacity: 0;
+        opacity: 1;
         width: 100%; }
       .header__top .nav__list {
         margin: 0;
-        width: 100%; }
-    .header--toggle {
-      display: block; }
-    .header .toggle__input:checked ~ .header__nav {
-      opacity: 1; }
-    .toggle__input:checked ~ .header--toggle {
-      background-image: url("../images/sub-title/sub-title-icon-light.svg"); } }
+        width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .header {
@@ -197,15 +194,14 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      height: 300px;
-      position: absolute;
-      left: 0;
-      margin-top: 60px;
+      height: 200px;
       background-color: #56ccf2; }
-    .header .header__title .title__head {
-      font-size: 44px; }
-    .header .header__title .title__description {
-      font-size: 18px; } }
+    .header .header__title {
+      margin-top: 50px; }
+      .header .header__title .title__head {
+        font-size: 44px; }
+      .header .header__title .title__description {
+        font-size: 18px; } }
 
 .slider {
   position: relative;
@@ -367,14 +363,17 @@ body {
       height: 52px; } }
 
 @media screen and (max-width: 480px) {
-  .slider__photo .photo__text {
-    font-size: 10px;
-    width: 150px; }
-  .slider__photo .slider__arrows {
-    left: calc(100% - 160px / 2);
-    top: calc(100% - 64px);
-    width: 50px;
-    height: 35px; } }
+  .slider {
+    position: relative;
+    margin-top: 100px; }
+    .slider__photo .photo__text {
+      font-size: 10px;
+      width: 150px; }
+    .slider__photo .slider__arrows {
+      left: calc(100% - 160px / 2);
+      top: calc(100% - 64px);
+      width: 50px;
+      height: 35px; } }
 
 .about {
   margin-bottom: 160px; }
@@ -652,7 +651,7 @@ body {
   .features__content {
     width: 100%; }
   .features__title {
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
   .features__description {
     -webkit-box-align: end;
         -ms-flex-align: end;
